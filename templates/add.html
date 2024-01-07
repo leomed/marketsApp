@@ -1,0 +1,76 @@
+{%extends "index.html"%}
+
+{%block head%}{%endblock%}
+
+{%block title%}Data{%endblock%}
+
+{%block content%}
+
+
+<main>
+    <div class="form-container">
+
+
+    <form action="{{url_for('add')}}" method="POST" novalidate>
+
+    {{ form.csrf_token }}
+
+        {{form.market_name.label}}
+        <p>
+            {{form.market_name}}
+        </p>
+
+        {{form.market_location.label}}
+        <p>
+            {{form.market_location}}
+        {% for error in form.market_location.errors %}
+            <p>{{error}}</p>
+            {% endfor %}
+
+
+        </p>
+
+        {{form.market_open.label}}
+        <p>
+
+            {{form.market_open}}
+        </p>
+
+        {{form.market_close.label}}
+        <p>
+
+            {{form.market_close}}
+        </p>
+
+        <p> {{form.market_prices.label}}  </p>
+
+
+        <p>
+
+            {{form.market_prices}}
+        </p>
+
+        {{form.market_wifi.label}}
+        <p>
+
+            {{form.market_wifi}}
+        </p>
+           {{form.market_power.label}}
+        <p>
+
+            {{form.market_power}}
+        </p>
+
+        <p class="btnsub">
+
+        {{form.submit}}
+        </p>
+
+
+
+    </form>
+    </div>
+
+
+    </main>
+{%endblock%}

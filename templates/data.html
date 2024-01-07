@@ -1,0 +1,54 @@
+{%extends "index.html"%}
+
+
+
+{%block head%}{%endblock%}
+
+
+{%block title%}Data{%endblock%}
+
+{%block content%}
+<main>
+
+
+    <div class="data-container">
+
+        <div class="container col-12">
+            <div class="row col-12">
+
+
+                <div class="col-12">
+
+                    <table class="table">
+
+                        <tbody>
+
+
+                        {% for row in new_market %}
+                        <tr class="table-secondary">
+                            {% for item in row %} {% if item[0:4] == "http" %}
+                            <td><a href="{{ item }}">Maps Link</a></td>
+                            {% else %}
+                            <td >{{ item }}</td>
+                            {% endif %} {% endfor %}
+                        </tr>
+                        {% endfor %}
+
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</main>
+
+
+
+
+{%endblock%}

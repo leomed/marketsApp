@@ -1,0 +1,115 @@
+* {
+margin: 0px;
+font-family: Raleway;
+font-size: 40px;
+}
+
+main {
+background: url("/static/images/background.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+height: auto;
+
+
+}
+
+.container {
+    background: rgba(60,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+h1,h2 {
+    color: $primaryColor;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.title {
+width: 100%;
+}
+.intro {
+    width: 100%;
+    text-align: center;
+}
+
+.p-resume {
+    color: $primaryColor;
+    font-size: 0.5rem;
+    font-weight: 300;
+}
+.show-me-link {
+    font-size: 0.3rem;
+    text-decoration: none;
+    color: $primaryColor;
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.data-container {
+
+    height: 100vh;
+    width: 100vw;
+
+}
+.data-container ,table,td {
+    font-size: 0.5rem;
+}
+.data-container ,table,td,a {
+    font-size: 0.5rem;
+}
+
+
+.form-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+
+}
+.form-container form  {
+    color: $primaryColor;
+    font-weight: 300;
+    background-color: rgba(60,0,0,0.5);
+    padding: 40px;
+    width: auto;
+
+label {
+    font-size: 0.4rem;
+}
+}
+.form-container form p {
+    font-size: 0.3rem;
+
+
+}
+.form-container form p input {
+width: 500px;
+padding: 10px;
+border-radius: 10px;
+outline: none;
+border: none;
+
+}
+
+.form-container form p input:focus {
+    background-color: green;
+    transition: 2s all ease;
+
+}
+#submit {
+    font-size: 0.4rem;
+    margin-top: 40px;
+}
+
+#submit:hover {
+    background-color: green;
+    transition: 2s all ease;
+}
